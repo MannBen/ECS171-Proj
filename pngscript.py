@@ -1,0 +1,10 @@
+import os
+from PIL import Image
+for image in os.listdir('../ECS171-Proj/images/pokemon/'):
+  print(image)
+  im = Image.open('../ECS171-Proj/images/pokemon/' + image)
+  # If is png image
+  if im.format == 'PNG':
+    # and is not RGBA
+    if im.mode != 'RGBA':
+      im.convert("RGBA").save(f"../ECS171-Proj/images/pokemon2/{image}2.png")

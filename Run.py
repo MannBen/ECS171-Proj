@@ -40,8 +40,8 @@ class Run:
 
         dataset = dset.ImageFolder(dir,
                             transform=transforms.Compose([
-                                transforms.Resize(64),
-                                transforms.CenterCrop(64),
+                                transforms.Resize(128),
+                                transforms.CenterCrop(128),
                                 transforms.ToTensor(),
                                 transforms.Normalize((0.5, 0.5, 0.5), (0.5, 0.5, 0.5)),
                             ]))

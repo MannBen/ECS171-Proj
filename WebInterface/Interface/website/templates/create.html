@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+    <head>
+        <style>
+            @import url('https://fonts.cdnfonts.com/css/pokemon-solid');
+        </style>          
+            <link rel="stylesheet" type="text/css" href="../static/css/style.css">
+        <!--link rel="stylesheet" href="/website/static/css/style.css"/-->
+    </head>
+        <body>
+            <div class="banner">
+                <div class="navbar">
+                    <div class="Group6">
+                        ECS 171 Group 6 
+                    </div>
+                    <ul>
+                        <li><a id = "home" href="/home">Home</a></li>
+                        <li><a id = "NPR" href = "/npr">Not Pokemon-Related</a></li>
+                        <li><a id = "designsdownhill" href = "/designsdownhill">Have Designs Gotten Worse?</a></li>
+                    </ul>
+                </div>
+                <div class="inputsCheckbox">
+                    <input type="checkbox" class="checkoption" value="BUG" onclick="checkedOnClick(this);"> BUG <br>
+                    <input type="checkbox" class="checkoption" value="DARK" onclick="checkedOnClick(this);"> DARK <br>
+                    <input type="checkbox" class="checkoption" value="DRAGON" onclick="checkedOnClick(this);"> DRAGON <br>
+                    <input type="checkbox" class="checkoption" value="ELECTRIC" onclick="checkedOnClick(this);"> ELECTRIC <br>
+                    <input type="checkbox" class="checkoption" value="FAIRY" onclick="checkedOnClick(this);"> FAIRY <br>
+                    <input type="checkbox" class="checkoption" value="FIGHTING" onclick="checkedOnClick(this);"> FIGHTING <br>
+                    <input type="checkbox" class="checkoption" value="FIRE" onclick="checkedOnClick(this);"> FIRE <br>
+                    <input type="checkbox" class="checkoption" value="FLYING" onclick="checkedOnClick(this);"> FLYING <br>
+                    <input type="checkbox" class="checkoption" value="GHOST" onclick="checkedOnClick(this);"> GHOST <br>
+                    <input type="checkbox" class="checkoption" value="GRASS" onclick="checkedOnClick(this);"> GRASS <br>
+                    <input type="checkbox" class="checkoption" value="GROUND" onclick="checkedOnClick(this);"> GROUND <br>
+                    <input type="checkbox" class="checkoption" value="ICE" onclick="checkedOnClick(this);"> ICE <br>
+                    <input type="checkbox" class="checkoption" value="NORMAL" onclick="checkedOnClick(this);"> NORMAL <br>
+                    <input type="checkbox" class="checkoption" value="POISON" onclick="checkedOnClick(this);"> POISON <br>
+                    <input type="checkbox" class="checkoption" value="PSYCHIC" onclick="checkedOnClick(this);"> PSYCHIC <br>
+                    <input type="checkbox" class="checkoption" value="ROCK" onclick="checkedOnClick(this);"> ROCK <br>
+                    <input type="checkbox" class="checkoption" value="STEEL" onclick="checkedOnClick(this);"> STEEL <br>
+                    <input type="checkbox" class="checkoption" value="WATER" onclick="checkedOnClick(this);"> WATER <br>
+
+                    <!-- Script -->
+                    <script type="text/javascript">
+                    function checkedOnClick(el){
+                 
+                       // Select all checkboxes by class
+                       var checkboxesList = document.getElementsByClassName("checkoption");
+                       for (var i = 0; i < checkboxesList.length; i++) {
+                          checkboxesList.item(i).checked = false; // Uncheck all checkboxes
+                       }
+                 
+                       el.checked = true; // Checked clicked checkbox
+                    }
+                    </script>
+                    <div class="numberOfPokemon">
+                        <label for="integerInput">Number of Pokemon to Generate (between 5 and 10):</label>
+                        <input type="number" id="integerInput" name="integerInput" min="5" max="10" step="1">
+                    </div>
+                    <div class="submitpokemonbutton">
+                        <a id = "pokemongeneration" href="/pokemongeneration">
+                            <button>
+                                CREATE POKEMON
+                            </button>
+                        </a>
+                    </div>
+            </div>
+        </body>
+</html>

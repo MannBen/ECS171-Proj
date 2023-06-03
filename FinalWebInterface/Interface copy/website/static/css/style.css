@@ -1,0 +1,186 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Pokemon Solid', sans-serif;
+}
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url(../background.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+.navbar{
+    width: 85%;
+    margin:auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color:azure;
+    text-transform: uppercase;
+}
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #e50d0d;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+}
+.Group6{
+    width: 200px;
+    cursor: pointer;
+    color: #FFCB05;
+    text-shadow:
+    -1px -1px 0 #3466AF,
+    1px -1px 0 #3466AF,
+    -1px 1px 0 #3466AF,
+    1px 1px 0 #3466AF; 
+}
+.content{
+    width: 90%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    text-size-adjust: 90%;
+    margin-block-end: 5%;
+}
+.content h1{
+    font-size: 70px;
+    margin-top: 80px;
+    color: #FFCB05;
+    text-shadow:
+    -5px -5px 0 #3466AF,
+    5px -5px 0 #3466AF,
+    -5px 5px 0 #3466AF,
+    5px 5px 0 #3466AF; 
+}
+.content p{
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+    color: #FFCB05;
+    text-shadow:
+    -1px -1px 0 #3466AF,
+    1px -1px 0 #3466AF,
+    -1px 1px 0 #3466AF,
+    1px 1px 0 #3466AF; 
+}
+.content button{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #e50d0d;
+    background: transparent;
+    color:aliceblue;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+span{
+    background: #e50d0d;
+    height: 100%;
+    width: 100%;
+    border-radius: 25px;
+    position:absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+.content button:hover span{
+    width: 100%;
+}
+.content button:hover{
+    border: none;
+    transform: scale(1.5);
+}
+
+.inputsCheckbox{
+    width: 80%;
+    position: relative;
+    top: 50%;
+    color:#FFCB05;
+    text-shadow:
+    -1px -1px 0 #3466AF,
+    1px -1px 0 #3466AF,
+    -1px 1px 0 #3466AF,
+    1px 1px 0 #3466AF; 
+    transform: translateY(-50%);
+    text-align: center;
+    text-size-adjust: 90%;
+    margin-block-end: 5%;
+    margin: 0 100px 100px 100px;
+    font-size: 100%;
+
+}
+
+.numberOfPokemon{
+    width: 95%;
+    position: relative;
+    color:#FFCB05;
+    text-shadow:
+    -1px -1px 0 #3466AF,
+    1px -1px 0 #3466AF,
+    -1px 1px 0 #3466AF,
+    1px 1px 0 #3466AF; 
+}
+
+
+.submitpokemonbutton button{
+    background: white;
+    color:#e50d0d;
+    height: 50%;
+    width: 50%;
+    border-radius: 25px;
+    position:relative;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.button{
+    width: 100%;
+    padding: 30px 0;
+    text-align:center;
+    margin: 20px 20px;
+    font-weight: bold;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;    
+    justify-content: space-between;
+}
+
+.header{
+    width: 100%;
+    padding: 2px 0;
+    text-align:center;
+    color:#FFCB05;
+    text-shadow:
+    -1px -1px 0 #3466AF,
+    1px -1px 0 #3466AF,
+    -1px 1px 0 #3466AF,
+    1px 1px 0 #3466AF; 
+}

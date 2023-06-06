@@ -1,6 +1,6 @@
 # ECS171-Proj
 To run Pokemon interface code,
-1. Download the zip file found in the FinalWebInterface folder located in main of this repo.
+1. Download the zip file named FinalVersion+FixedPath found in the FinalWebInterface folder located in main of this repo.
 2. pip install flask (Prevents --> ModuleNotFoundError: No module named 'flask')
 3. pip install beautifulsoup4 (Prevents --> ModuleNotFoundError: No module named 'bs4')
 4. Install other packages if error stating ModuleNotFoundError

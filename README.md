@@ -8,3 +8,6 @@ To run Pokemon interface code,
 6. Run "python main.py"
 7. When see this statement, "Running on http://127.0.0.1:5000", copy the link http://127.0.0.1:5000 and paste URL in address bar.
 8. Once entered, interface should work.
+
+
+VIDEO SHOWCASING CODE AND WEB INTERFACE HERE: https://vimeo.com/833874617/fc7587dd8f?share=copy

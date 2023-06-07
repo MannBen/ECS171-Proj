@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+    <head>
+        <style>
+            @import url('https://fonts.cdnfonts.com/css/pokemon-solid');
+        </style>          
+            <link rel="stylesheet" type="text/css" href="../static/css/style.css">
+        <!--link rel="stylesheet" href="/website/static/css/style.css"/-->
+    </head>
+        <body>
+            <div class="banner">
+                <div class="navbar">
+                    <div class="Group6">
+                        ECS 171 Group 6 
+                    </div>
+                    <ul>
+                        <li><a id = "home" href="/home">Home</a></li>
+                        <li><a id = "NPR" href = "/npr">Not Pokemon-Related</a></li>
+                        <li><a id = "designsdownhill" href = "/designsdownhill">Have Designs Gotten Worse?</a></li>
+                    </ul>
+                </div>
+                <div class="content">
+                    <div style="text-align:center"> 
+                        <button onclick="playPause()">Play/Pause</button> 
+                        <button onclick="makeBig()">Big</button>
+                        <button onclick="makeSmall()">Small</button>
+                        <button onclick="makeNormal()">Normal</button>
+                        <br><br>
+                        <p> PRESS PLAY TO SEE HOW POKEMON DESIGNS HAVE DETERIORATED</p>
+                        <br><br>
+                        <video id="video2" width="500">
+                          <source src="../static/pokemondesignsworse.mp4" type="video/mp4">
+                          <source src="../static/pokemondesignsworse.ogg" type="video/ogg">
+                        </video>
+                      </div> 
+                      
+                      <script> 
+                      var myVideo = document.getElementById("video2"); 
+                      
+                      function playPause() { 
+                        if (myVideo.paused) 
+                          myVideo.play(); 
+                        else 
+                          myVideo.pause(); 
+                      } 
+                      
+                      function makeBig() { 
+                          myVideo.width = 600; 
+                      } 
+                      
+                      function makeSmall() { 
+                          myVideo.width = 320; 
+                      } 
+                      
+                      function makeNormal() { 
+                          myVideo.width = 500; 
+                      } 
+                      </script> 
+                      
+                      <p>Video courtesy of <a href="https://youtu.be/gR6W0_K7SPc" target="_blank">Youtube</a>.</p>
+                    </p>
+                </div>
+            </div>
+        </body>
+</html>

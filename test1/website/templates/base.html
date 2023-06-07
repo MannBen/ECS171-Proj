@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+    <head>
+        <style>
+            @import url('https://fonts.cdnfonts.com/css/pokemon-solid');
+        </style>          
+        <title>
+            {% block title %}Pokemon Creation{% endblock %}
+        </title>
+            <link rel="stylesheet" type="text/css" href="../static/css/style.css">
+        <!--link rel="stylesheet" href="/website/static/css/style.css"/-->
+    </head>
+        <body>
+            <div class="banner">
+                <div class="navbar">
+                    <div class="Group6">
+                        ECS 171 Group 6 
+                    </div>
+                    <ul>
+                        <li><a id = "home" href="/home">Home</a></li>
+                        <li><a id = "NPR" href = "/npr">Not Pokemon-Related</a></li>
+                        <li><a id = "designsdownhill" href = "/designsdownhill">Have Designs Gotten Worse?</a></li>
+                    </ul>
+                </div>
+                <div class="content">
+                    <h1>DESIGN YOUR POKEMON</h1>
+                    <p>Over the years, designs of new generations of Pokemon have drastically deteriorated.
+                        <br></br>
+                        What happened to the nostalgic, memorable Pokemon we all fell in love with? 
+                        <br></br>
+                        As a result, 
+                        we have designed a model that will produce new Pokemon based off of previous generations! 
+                        <br></br>
+                        <br></br>
+                    <a id = "create" href="/create">
+                        <button><span></span>
+                            CREATE NEW POKEMON
+                        </button>
+                    </a>
+                    </p>
+                </div>
+            </div>
+        </body>
+</html>

@@ -11,4 +11,6 @@ To run Pokemon interface code,
 
 
 VIDEO SHOWCASING CODE AND WEB INTERFACE HERE: https://vimeo.com/833874617/fc7587dd8f?share=copy
-The only change in code was deletion of file tempCodeRunnerFile.py because it was used as a temporary tester. Interface code works is not related or affected by it. 
+The only changes in code was:
+1. deletion of file tempCodeRunnerFile.py because it was used as a temporary tester. Interface code works is not related or affected by it. 
+2. debug=false in main.py for Windows but debug=true should work for Mac. Depends on user's computer.
